@@ -1,0 +1,1215 @@
+body {
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    max-width: 1200px; /* Ajusto el ancho maximo de la pagina */
+    padding: 0 20px; /* Pongo margen en los laterales */
+    overflow-x: hidden; /* Oculto el desbordamiento horizontal */
+}
+
+
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 180px;
+    padding: 10; /* Quito el padding para que no haya espacio adicional */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alineo el contenido a la izquierda */
+    justify-content: space-between;
+    background-color: #ffffff;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid #ccc; /* Pongo una linea gris debajo del header */
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start; /* Alineo el contenido a la izquierda */
+    align-items: center;
+    width: 100%;
+    padding: 10px 0; /* Ajusto el padding si es necesario */
+}
+
+nav img {
+    width: 250px; /* Ajusto el tamaño del logo */
+    height: auto;
+    margin-left: 15px; /* Quito cualquier margen a la izquierda */
+    padding-left: 0; /* Quito el padding extra */
+    margin-right: 130px; /* Agrego margen derecho para crear el espacio entre el logo y la lista */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4px; /* Ajusto este valor para reducir el espacio entre los elementos de la lista */
+    margin: 0;
+    padding: 0;
+    margin-top: 20px; 
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00233b;
+    font-size: 14px;
+    letter-spacing: -0.4px;
+}
+
+#menu {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+#menu ul li {
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #00233b;
+    font-size: 14px;
+}
+
+#menu span {
+    margin-left: 10px;
+}
+
+.cursiva a {
+    font-style: italic;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#informacion {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+  
+.trabaja-con-nosotros {
+    display: inline-block; /* Aseguro que se comporte como un boton */
+    border-radius: 2em; /* Bordes redondeados */
+    color: #fff; /* Color del texto */
+    background-color: #f90; /* Color de fondo del boton */
+    box-shadow: 0 3px 0 #c77700; /* Sombra en la parte inferior */
+    font-size: 11px; /* Tamano de la fuente */
+    padding-top: 8px; /* Espacio superior */
+    padding-bottom: 8px; /* Espacio inferior */
+    padding-left: 12px; /* Espacio izquierdo */
+    padding-right: 12px; /* Espacio derecho */
+    text-decoration: none; /* Quito el subrayado del enlace */
+    text-align: center; /* Centro el texto dentro del boton */
+    cursor: pointer; /* Cambio el cursor a una mano cuando el usuario pasa el raton por encima */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transicion suave */
+}
+
+#institucion {
+    margin-top: 40px;  /* Ajusto el valor segun lo necesite */
+}
+/* Efecto cuando se pasa el raton por encima */
+.trabaja-con-nosotros:hover {
+    background-color: #e68a00; /* Cambio el color de fondo cuando el raton pasa por encima */
+    box-shadow: 0 3px 0 #b86f00; /* Cambio la sombra cuando el raton pasa por encima */
+}
+
+/* Estilo para los enlaces en negrita y mas grandes */
+#menu-principal li a.strong {
+    font-size: 18px; /* Tamano mas grande */
+    font-weight: bold; /* Negrita */
+}
+
+/* Contenedor principal de las listas */
+#menu-principal {
+    display: flex;
+    flex-direction: row; /* Aseguro que las listas esten en columna */
+    margin-top: 10px; /* Ajusto el margen superior para separar la lista del logo */
+    margin-bottom: 50px; /* Espacio entre la lista y el siguiente contenido */
+}
+
+/* Contenedor de la primera lista */
+#menu-principal ul:first-child {
+    display: flex;
+    justify-content: flex-start; /* Alineo los elementos de la primera lista a la izquierda */
+    gap: 15px; /* Espacio entre los elementos */
+}
+
+/* Contenedor de la segunda lista */
+#menu-principal ul:last-child {
+    display: flex;
+    justify-content: flex-start; /* Alineo los elementos a la izquierda */
+    gap: 15px; /* Espacio entre los elementos */
+    margin-left: 200px; /* Ajusto el margen izquierdo para empujar la lista hacia la derecha */
+    font-weight: bold; /* Aplico negrita a los elementos de la segunda lista */
+    font-size: 18px; /* Tamano mas grande para la segunda lista */
+}
+
+.search-icon {
+    background-color: rgb(255, 102, 0); /* Color de fondo del circulo */
+    width: 40px; /* Tamano del circulo */
+    height: 40px; /* Tamano del circulo */
+    border-radius: 50%; /* Hago que el icono sea un circulo */
+    display: inline-flex;
+    align-items: center; /* Centro la imagen verticalmente */
+    justify-content: center; /* Centro la imagen horizontalmente */
+    cursor: pointer; /* Cambio el cursor a mano */
+    margin-left: 40px; /* Ajusto el margen si es necesario */
+}
+
+.search-lupa {
+    width: 60%; /* Ajusto el tamano de la imagen, ocupa un 60% del circulo */
+    height: 60%; /* Ajusto el tamano de la imagen, ocupa un 60% del circulo */
+    object-fit: contain; /* Aseguro que la imagen mantenga su proporcion */
+}
+
+/* Estilos del modal (ventana emergente) */
+.modal {
+    display: none; /* Se oculta inicialmente */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4); /* Fondo translúcido */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal h2 {
+    margin: 10px 0;
+}
+
+.modal input {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.modal button {
+    padding: 8px 15px;
+    background-color: #f90;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modal button:hover {
+    background-color: #c77700;
+}
+
+/* Estilo para el boton de cerrar */
+.cerrar {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#informacion .container {
+    width: 50%;
+}
+/* Estilo para la ruta de navegación */
+.breadcrumb {
+    padding: 10px 0;
+    font-size: 11px;
+    color: #333;
+    margin-top: 20px; /* Margen superior para separar del header */
+    margin-left: 20px; /* Margen izquierdo para separar de los bordes */
+}
+
+/* Estilo para los enlaces de la ruta de navegación */
+.breadcrumb a {
+    text-decoration: none;
+}
+
+/* Estilo para el enlace INICIO y Programas (color azul #1779B2) */
+.breadcrumb a.inicio,
+.breadcrumb a.programas {
+    color: #1779B2; /* Azul #1779B2 para INICIO y Programas */
+}
+
+.breadcrumb a.inicio:hover,
+.breadcrumb a.programas:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el último texto de la ruta (no es enlace) */
+.breadcrumb .breadcrumb_last {
+    color: #ccc; /* Gris claro para el último elemento */
+    margin-left: 5px; /* Espacio entre el último enlace y el texto */
+}
+
+/* Estilo general para los elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilo para la línea naranja */
+
+.orange-line {
+    width: 50%; /* La línea ocupa el 100% del ancho de la página */
+    height: 1px; /* Grosor de la línea */
+    background-color: #f60; /* Color naranja */
+    margin-top: 40px; /* Separa la línea un poco más abajo */
+    position: relative; /* Necesario para posicionar el óvalo */
+    margin-left: 0; /* La línea comienza desde la izquierda */
+    margin-right: 0; /* Elimina el margen derecho */
+}
+/* Estilo para el óvalo PRESENCIAL */
+.presencial-oval {
+    position: absolute; /* Posiciona el botón de forma absoluta dentro del contenedor */
+    top: -15px; /* Ajusta el botón para que quede sobre la línea */
+    left: 50%; /* Centra el botón horizontalmente */
+    transform: translateX(-50%); /* Asegura que el botón esté perfectamente centrado */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    background-color: #f60; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor cuando pasa sobre el botón */
+}
+/* Contenedor principal para alinear contenido */
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+/* Estilo para el lado izquierdo: Mercadeo y Publicidad */
+.content-left {
+    width: 50%;
+}
+
+/* Estilo para el texto de Mercadeo y Publicidad */
+.mercadeo-text {
+    font-size: 60px; /* Tamaño de fuente */
+    color: #00233B; /* Color azul */
+    margin-top: 1cm; /* Espacio entre el botón y el texto */
+    margin-left: 1cm; /* Espacio entre el botón y el texto */
+    font-weight: bold; /* Negrita */
+}
+
+.descripcion-programa {
+    font-size: 18px;
+    line-height: 0.8;
+    color: #00233B;
+    background-color: #ffffff; /* Fondo gris claro */
+    padding: 20px;
+    text-align: justify; /* Alinea el texto justificado */
+    margin-left: 0.5cm; /* Espacio entre el botón y el texto */
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.btn-inscribirse, .btn-tarifas {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border-radius: 50px;
+    padding: 20px 30px;
+    cursor: pointer;
+    width: 250px; /* Ajusta el ancho según tus necesidades */
+    margin-left: -5px; /* Ajusta el valor según lo que necesites */
+}
+
+.btn-inscribirse {
+    background-color: white;
+    color: #333;
+    border: 1px solid #ff6600;
+    transition: background-color 0.3s ease-in-out;
+    margin-bottom: 10px;
+    width: 300px
+}
+
+.btn-inscribirse:hover {
+    background-color: #ff6600;
+    color: white;
+}
+
+.btn-tarifas {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    width: 300px
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-left {
+    width: 60%; /* Ajusta el ancho según tus necesidades */
+}
+
+.content-right {
+    width: 40%;
+    /* Otros estilos para la parte derecha */
+}
+
+.image-container img {
+    width: 450px; /* Ajusta el ancho deseado */
+    height: 300px; /* Ajusta la altura deseada */
+}
+
+/* Cuadro de información gris */
+.info-box {
+    background-color: #617989; /* Fondo gris */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espacio dentro del cuadro */
+    font-size: 16px; /* Tamaño de fuente */
+    width: 100%;
+    line-height: 1.3; /* Espacio entre líneas */
+}
+
+.info-box p {
+    margin: 10px 0; /* Espacio entre cada línea */
+}
+
+.info-box strong {
+    font-weight: bold;
+}
+
+/* Línea naranja con márgenes izquierda y derecha */
+.orange-line-separator {
+    width: 100%; /* Anchura de la línea ajustada automáticamente por el margen */
+    height: 1px; /* Grosor de la línea */
+    background-color: #FF6600; /* Color naranja */
+    margin: 0 4cm; /* Márgenes de 1 cm a la izquierda y derecha */
+    margin-top: 20px;
+}
+
+/* Fondo blanco del formulario y alineación del texto */
+.info-box.si {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Estilo para el título en azul y tamaño 40px */
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Contenedor para alinear Nombre y Apellidos */
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Campos de entrada de texto ovalados y más controlados en largo */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    max-width: 400px; /* Aumentado el max-width para que los campos sean más largos */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Ovalados */
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Contenedor para preguntas y respuestas alineadas horizontalmente */
+.question-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+/* Cada pregunta alineada con su select */
+.question-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 350px; /* Controlamos el tamaño de cada bloque */
+}
+
+/* Estilo de las etiquetas de las preguntas */
+.question-item label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Estilo del placeholder */
+input::placeholder {
+    color: #999;
+}
+
+/* Botón de envío en color naranja */
+.btn-enviar {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px; /* Ovalado */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: #e65c00;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #02333b;
+    margin-bottom: 20px;
+    margin-top: 50px; /* Espacio superior */
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px; /* Ajusta el espacio entre los cuadros de texto */
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    flex: 1;
+    min-width: 200px; /* El tamaño más pequeño de los cuadros de texto */
+    max-width: 45%; /* Aseguro que los cuadros no sean demasiado anchos */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px; /* Hago los cuadros ovalados */
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+input[name="correo"] {
+    margin-left: 5px; /* Ajusto el margen izquierdo para acercar el cuadro de correo al de documento */
+    width: 30%;
+    max-width: 500px;
+}
+
+input[name="documento"] {
+    margin-right: 5px; /* Ajusto el margen derecho para acercar el cuadro de documento al de correo */
+}
+
+input[type="email"],
+input[type="tel"] {
+    width: 30%;
+    max-width: 500px;
+}
+
+input::placeholder {
+    font-size: 12px; /* Ajusto el tamaño del texto en el placeholder */
+}
+
+label {
+    font-size: 1em;
+    color: #02333b;
+    width: 100%; /* Aseguro que las etiquetas se alineen encima de las opciones */
+    font-size: 12px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px; /* Añado un pequeño margen al checkbox */
+}
+
+label a {
+    font-size: 12px; /* Ajusto el tamaño de la fuente del enlace */
+    color: #02333b;
+    text-decoration: none;
+}
+
+label a:hover {
+    text-decoration: underline; /* Subrayo el enlace al pasar el mouse */
+}
+
+.form-row-preguntas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.pregunta {
+    font-size: 9px; /* Hago el tamaño de fuente más pequeño para las preguntas */
+    font-weight: bold;
+    color: #02333b;
+    margin-bottom: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pregunta label {
+    font-size: 11px; /* Ajusto el tamaño de fuente para las preguntas */
+    font-weight: bold;
+    color: #02333b;
+    margin-bottom: 5px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    font-size: 12px;
+    color: #333;
+    margin-top: 10px; /* Dejo un espacio encima del select */
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.form-row {
+    display: flex;
+    align-items: center; /* Centeo los elementos verticalmente */
+    gap: 10px; /* Añado espacio entre los elementos */
+    margin-bottom: 15px; /* Separo las filas */
+}
+
+button {
+    font-size: 12px; /* Ajusto el tamaño de la fuente del botón */
+    padding: 10px 20px;
+    background-color: #ff6600;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Dejo espacio entre la casilla de aceptación y el botón */
+    width: auto;
+}
+
+button:hover {
+    background-color: #e55d00; /* Cambio el color de fondo al pasar el ratón sobre el boton */
+}
+
+/* Aseguro que el texto de la politica de proteccion de datos y el label tengan la misma fuente */
+.politica-datos {
+    font-family: 'Roboto', sans-serif;
+}
+  
+.politica-datos label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+}
+  
+.politica-datos a {
+    font-size: 14px;
+    text-decoration: underline;
+}
+  
+/* Flexbox para alinear los elementos en una fila */
+.form-row {
+    display: flex; /* Uso flexbox para colocar los elementos en la misma linea */
+    align-items: center; /* Alineo todos los elementos verticalmente al centro */
+    gap: 10px; /* Ajusto el espacio entre los elementos */
+}
+  
+/* Espacio entre el checkbox y el texto */
+.politica-datos input[type="checkbox"] {
+    margin-right: 5px; /* Reduzco el espacio entre el checkbox y el texto */
+}
+  
+/* Boton a la derecha del checkbox y texto */
+.form-row button {
+    margin-left: 10px; /* Ajusto el margen izquierdo para una mejor alineacion */
+    padding: 8px 16px; /* Tamano adecuado para el boton */
+    font-size: 14px; /* Ajuste del tamano de la fuente */
+    cursor: pointer; /* Pongo el cursor como pointer cuando se pasa sobre el boton */
+}
+
+/* Titulaciones */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding-left: 20px; /* Anadido para mover todo hacia la derecha */
+}
+  
+.titulaciones {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+  
+.titulaciones__titulo {
+    text-align: center;
+    font-size: 32px;
+}
+  
+.titulaciones__titulo-h2 {
+    color: #00233b;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+  
+.titulaciones__cards {
+    display: flex;
+    justify-content: space-evenly; /* Esto ajusta la distancia entre las tarjetas */
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-left: 60px; /* Mueve las tarjetas hacia la derecha */
+}
+  
+.titulaciones__card {
+    width: 300px;
+    height: auto;
+    background-color: #f7f7f5;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+  
+.titulaciones__card-contenido {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: #00233b;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+  
+.titulaciones__card-contenido span {
+    display: block;
+}
+  
+.titulaciones__card-contenido>span:nth-child(1) {
+    font-size: 18px;
+}
+  
+.titulaciones__card-contenido>span:nth-child(2) {
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+.titulaciones__card-contenido-resoluciones {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+  
+.titulaciones__card-enlace {
+    color: #ff6600;
+    font-size: 18px;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+  
+.titulaciones__card-enlace:hover {
+    color: #cc5200;
+}
+
+/* Campo Laboral */
+#campo_laboral {
+    display: flex;
+    justify-content: center; /* Centro todo el contenido horizontalmente */
+    align-items: flex-start; /* Alineo el contenido en la parte superior */
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+  
+#campo_laboral .contenedor {
+    width: 40%; /* Ajusto el tamaño del contenedor a la izquierda */
+    padding-right: 20px; /* Separacion entre las vinetas y las imagenes */
+}
+  
+#campo_laboral .imagen {
+    display: flex;
+    justify-content: space-between; /* Distribuyo las imagenes horizontalmente */
+    width: 60%; /* Ajusto el tamaño del contenedor de las imagenes */
+    padding-left: 20px; /* Espacio a la izquierda para las imagenes */
+    margin-top: 100px; /* Bajo las imagenes un poco */
+}
+  
+.imagen img {
+    width: 55%; /* Ajusto el tamaño de las imagenes para que se alineen correctamente */
+    height: auto;
+}
+  
+.laboral-ul ul {
+    padding-left: 20px; /* Desplazo las vinetas hacia la derecha */
+}
+  
+.laboral-ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative; /* Para posicionar el pseudoelemento */
+}
+  
+.laboral-ul li::before {
+    content: "•"; /* Defino el punto */
+    color:#00233b; /* Color del punto */
+    font-size: 20px; /* Tamano del punto */
+    position: absolute;
+    left: -20px; /* Desplazo el punto hacia la izquierda */
+    top: 0;
+}
+
+/* matriculas */ 
+
+#matriculas {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    background-color: #f8f7f5;
+    padding-left: 2cm; /* Añado un padding para alejar más el contenido de los bordes */
+    padding-right: 2cm; /* Añado un padding para alejar más el contenido de los bordes */
+    text-align: center;
+}
+
+#matriculas .matricula-container {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.titulo h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.text-matricula p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 0; /* Elimino el margen superior */
+    margin-bottom: 0; /* Elimino el margen inferior */
+    line-height: 2; /* Ajusto el interlineado */
+}
+
+#info-matricula {
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+#info-matricula .info-matricula-img {
+    width: 50px;
+}
+
+
+.info-matricula-text ul {
+    list-style-type: disc;
+    /* Establece el tipo de viñeta */
+    padding-left: 20px;
+    margin-right: 90px;
+    margin-left: 22px;
+  
+  }
+  
+  .info-matricula-text li {
+    margin-bottom: 25px;
+    margin-right: 10px;
+    font-size: 21px;
+    color: black;
+    /* Establece el color del texto a negro */
+  
+  }
+  
+  /* Contenedor principal */
+  #info-matricula {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+  /* Estilo para la imagen */
+  .info-matricula-img {
+    width: 50px;
+  }
+
+  /* Estilo para el contenido */
+  .content-matricula {
+    width: 50%;
+    padding-left: 20px;
+  }
+
+  /* Título en naranja y línea debajo */
+  .content-titulo h4 {
+    font-size: 24px;
+    color: #cc5200;
+    margin: 0;
+  }
+
+  .orange-line1 {
+    width: 150px;
+    height: 2px;
+    background-color: #cc5200;
+    margin-top: 0px;
+  }
+
+  /* Texto en azul */
+  .blue-text {
+    font-size: 16px;
+    line-height: 2.0;
+    color: #00233b; /* Azul */
+  }
+
+  /* Estilo para la columna "Sé un experto en" */
+  .info-matricula-text {
+    width: 45%;
+    margin-left: 20px; /* Alinear al lado derecho de la imagen */
+    font-size: 35px;
+  }
+
+  /* Estilo para la lista */
+  .matricula-ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 0.8; /* Reducir interlineado */
+  }
+
+  .matricula-ul li {
+    position: relative;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  .matricula-ul li::before {
+    content: '\2022'; /* Punto antes de cada ítem */
+    color: orange;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 18px;
+  }
+
+  /* Estilo para el enlace de "Plan de Estudios" */
+  .content-bottom a {
+    width: 338px;
+    height: 48px;
+    background: #446d89;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 32px;
+    display: block;
+    text-decoration: none;
+    padding: 8px 12px 12px 75px;
+    max-width: 100%;
+    position: relative;
+    white-space: nowrap;
+    transition: all 0.3s ease-in;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  nav img {
+    width: 50%;
+    max-width: 300px; /* Cambia a un tamaño más pequeño */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+  }
+
+  .perfil-container {
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  
+  .perfil-container img {
+    width: 100%;
+    max-width: 600px; /* Ajusta a un tamaño mayor para hacer la imagen más grande */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+  }
+  
+
+  footer {
+    background-color: #333; /* Color de fondo oscuro */
+    color: #ffffff; /* Color de texto claro */
+    padding: 40px;
+  }
+  
+  footer .containerr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  footer .seccion1, .seccion2 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  footer .contenedor1, .contenedor2, .contenedor3 {
+    margin-bottom: 20px;
+  }
+  
+  footer .footer-row, .footer-row2, .footer2-row, .footer2-row2, .footer3-row {
+    margin-bottom: 15px;
+  }
+  
+  footer .footer-tex1 img {
+    max-width: 150px;
+    margin-bottom: 10px;
+  }
+  
+  footer .footer-tex1 h2, .footer-tex2 h2, .footer2-row h3, .footer3-row h2 {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  footer a {
+    color: #f60; /* Color naranja */
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .footer2-row img {
+    max-width: 80px; /* Tamaño de los sellos */
+    margin-right: 10px;
+  }
+  
+  footer .footer3-row2 nav ul {
+    list-style: none;
+    padding: 0;
+    color:#b86f00
+  }
+  
+  footer .footer3-row2 nav ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer hr {
+    border: 1px solid #f60;
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  footer .seccion2 .footer3-row h2 {
+    color: #f60;
+    margin-bottom: 10px;
+  }
+  
+  footer .footer-row2 i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+
+.footer-tex1 h2 {
+    color: rgb(255, 255, 255); /* Color negro para los títulos */
+    font-size: 14px; /* Tamaño de fuente */
+}
+.footer-tex1 a {
+    color: #f60; /* Color específico para el enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+.footer-tex1 img {
+    max-width: 200px; /* Tamaño máximo para el logo */
+    height: auto;
+}
+.footer-tex1 hr {
+    border: 1px solid #ddd; /* Línea divisoria */
+    margin-top: 20px;
+}
+  
+  @media (min-width: 768px) {
+    footer .seccion1 {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    footer .footer2-row, .footer2-row2, .footer2-row3 {
+      flex: 1;
+      padding: 0 15px;
+      
+    }
+  }
+
+  /* Estilos para el contenedor principal con fondo gris claro */
+.location-icontec-container {
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 15px;
+    border-radius: 8px; /* Bordes redondeados opcionales */
+    text-align: center;
+}
+
+.icontec-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente todos los elementos */
+    background-color: #707070; /* Fondo gris */
+    padding: 5px; /* Reduce el espaciado alrededor del contenedor */
+    width: 80%; /* Ajusta el ancho del contenedor, puedes cambiar el valor */
+    height: 8cm;
+    margin: 30px auto 0; /* Ajusta el margen superior (20px o el valor que desees) para bajar el contenedor */
+    border-radius: 5px; /* Bordes redondeados para una apariencia más compacta */
+}
+
+.location-info {
+    display: flex;
+    gap: 20px; /* Espacio entre Bogotá y Villavicencio */
+    margin-right: 20px; /* Espacio entre la ubicación y los íconos */
+}
+
+.location-item {
+    font-size: 10px; /* Tamaño de fuente para el texto */
+    line-height: 1.5;
+}
+
+.icontec-images img {
+    width: 60px; /* Tamaño pequeño para los íconos */
+    height: auto;
+    margin: 0 5px; /* Espacio entre cada ícono */
+}
+
+.location-item strong {
+    font-size: 20px; /* Tamaño de fuente */
+    color: #f60; /* Color naranja */
+    text-align: center; /* Centra el texto */
+    display: block; /* Hace que el elemento ocupe toda la línea, permitiendo centrar el texto */
+    width: 100%; /* Asegura que el texto se alinee correctamente */
+}
+
+h2 {
+    font-weight: normal; /* Asegura que el texto no esté en negrilla */
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-size: 12px; /* Tamaño de fuente */
+  }
+
+  .footer-text {
+    text-align: left;
+    color: white;
+  }
+  
+  .social-title {
+    font-weight: bold; /* Negrilla */
+    color: white; /* Blanco */
+    margin-bottom: 10px; /* Espaciado debajo */
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaciado entre los iconos */
+  }
+  
+  .social-icons img {
+    width: 30px; /* Ajusta el tamaño de los iconos */
+    height: auto;
+  }
+
+  #menu-item-17288 a, #menu-item-17291 a {
+    border-radius: 2em; /* Bordes redondeados */
+    color: #fff; /* Color del texto blanco */
+    background-color: #f90; /* Fondo naranja */
+    box-shadow: 0 3px 0 #c77700; /* Sombra del botón */
+    font-size: 11px; /* Tamaño de la fuente */
+    padding-top: 8px; /* Espaciado superior */
+    padding-bottom: 8px; /* Espaciado inferior */
+    padding-left: 12px; /* Espaciado izquierdo */
+    padding-right: 12px; /* Espaciado derecho */
+    text-decoration: none; /* Elimina el subrayado por defecto del enlace */
+    display: inline-block; /* Asegura que el enlace tenga un comportamiento de bloque en línea */
+}
+
+.links-importantes {
+    font-size: 20px;    /* Tamaño de la fuente 20px */
+    color: #f60;        /* Color naranja */
+}
+
+/* Estilo para los títulos */
+.titulo {
+    text-align: center; /* Centra el texto */
+    font-size: 40px; /* Tamaño de fuente de 40px */
+    font-weight: bold; /* Aplica negrilla */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #000; /* Puedes cambiar el color si lo necesitas */
+}
